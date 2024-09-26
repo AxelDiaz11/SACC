@@ -9,11 +9,13 @@
         font-family: "Georgia", serif; /* Fuente más formal */
         margin: 20px;
         line-height: 1.6; /* Mejor legibilidad */
+        background-color: #f4f7f9; /* Color de fondo suave */
     }
     h1 {
         font-size: 22px; /* Títulos un poco más pequeños */
         margin-bottom: 10px;
         font-weight: bold; /* Negrita para resaltar títulos */
+        color: #0056b3; /* Color para títulos */
     }
     p {
         text-align: justify; /* Alineación justificada para estilo formal */
@@ -35,79 +37,77 @@
     a:hover {
         text-decoration: underline;
     }
+    .image-container {
+        display: flex;
+        justify-content: center; /* Centrar contenido */
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+        gap: 20px; /* Espaciado entre imágenes */
+        padding: 20px;
+        background-color: #e8f5e9; /* Color verde claro */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        margin: 20px 0; /* Espacio arriba y abajo */
+    }
+    .image-item {
+        flex: 1 1 200px; /* Tamaño flexible para las imágenes */
+        max-width: 200px; /* Ancho máximo */
+        text-align: center; /* Centrar texto */
+    }
+    img {
+        width: 100%; /* Asegura que las imágenes sean responsivas */
+        height: auto; /* Mantiene la proporción */
+        border-radius: 10px; /* Bordes redondeados en imágenes */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
+        transition: transform 0.3s; /* Transición suave para el efecto */
+    }
+    img:hover {
+        transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    }
     table {
         width: 100%;
         text-align: center;
         margin-top: 20px;
     }
-    table img {
-        width: 160px; /* Tamaño más pequeño para las imágenes */
-        height: auto;
-        border-radius: 50%; /* Para hacer las imágenes redondas */
-    }
     td {
         padding: 10px;
         font-size: 14px; /* Texto más pequeño en la tabla */
     }
-    </style>
-
+  </style>
 </head>
 <body>
   
-  <!-- El archivo index.html debe contener las siguientes secciones:
-  • Título del proyecto. Aquí se agrega una descripción muy breve del proyecto. -->
   <h1>Sistema de Administración y Control de Citas (SACC)</h1>
-  SACC es un sistema propuesto para clínicas, pensado para gestionar de manera eficiente el funcionamiento interno de las clinícas: inventario, citas, pago, historial clínico, proveedores, paciente, rehabilitación, personal y servicios.
-  <!-- • Problemática del proyecto. Aquí se describe la problemática que se piensa resolver. -->
+  <p>SACC es un sistema propuesto para clínicas, pensado para gestionar de manera eficiente el funcionamiento interno de las clínicas: inventario, citas, pago, historial clínico, proveedores, paciente, rehabilitación, personal y servicios.</p>
+
   <h1>Problemática del proyecto</h1>
-  La problemática a resolver es la falta de un sistema integrado, para la gestión y control de procesos internos en clínicas ya que genera problemas en el registro de citas, inventario, pagos, historiales clínicos y atención al paciente, dicha situación dificulta el seguimiento adecuado en clínicas.  <!-- • Objetivo del proyecto. Aquí se agrega el objetivo generale del proyecto. -->
+  <p>La problemática a resolver es la falta de un sistema integrado para la gestión y control de procesos internos en clínicas, lo que genera problemas en el registro de citas, inventario, pagos, historiales clínicos y atención al paciente. Esta situación dificulta el seguimiento adecuado en clínicas.</p>
+
   <h1>Objetivo del proyecto</h1>
-  Sistematizar los procesos de gestión y control de citas, inventarios, pagos, historiales clínicos y atención médica mediante el desarrollo de un sistema digital integrado, con el fin de optimizar el seguimiento de dichos aspectos <!-- • Subsistemas del proyecto. Esta sección describe cómo el equipo de desarrollo fragmentó el sistema principal en subsistemas. Aquí también se agrega una lista de los subsistemas del proyecto y cada elemento de la lista es un enlace al archivo HTML que contiene la descripción de cada subsistema. -->
-<h1>Subsistemas del proyecto</h1>
-<p>
-  En el desarrollo del sistema se utilizó la estrategia de "divide y vencerás", que busca identificar unidades de desarrollo lo suficientemente concisas para ser trabajadas de manera independiente, pero que también sean fáciles de integrar en el sistema completo. 
-</p>
-<!-- La sección Subsistemas del proyecto incluye una imagen de todos los subsistemas del proyecto. -->
-<img src="./imagenes/img_subsistemas.jpeg" alt="Descripción de los subsistemas" width="800">
+  <p>Sistematizar los procesos de gestión y control de citas, inventarios, pagos, historiales clínicos y atención médica mediante el desarrollo de un sistema digital integrado, con el fin de optimizar el seguimiento de dichos aspectos.</p>
+
+  <h1>Subsistemas del proyecto</h1>
+  <p>En el desarrollo del sistema se utilizó la estrategia de "divide y vencerás", que busca identificar unidades de desarrollo lo suficientemente concisas para ser trabajadas de manera independiente, pero que también sean fáciles de integrar en el sistema completo.</p>
+  
+  <div class="image-container">
+    <div class="image-item">
+      <img src="./imagenes/img_subsistemas.jpeg" alt="Descripción de los subsistemas">
+      <p>Descripción de los subsistemas</p>
+    </div>
+  </div>
 
   <ul>
-    <a href="./subsistemas/citas.html">
-      <li>Citas</li>
-    </a>
-    <a href="./subsistemas/historial clinico.html">
-      <li>Historial Clínico</li>
-    </a>
-    <a href="./subsistemas/inventario.html">
-      <li>Inventario</li>
-    </a>
-    <a href="./subsistemas/paciente.html">
-      <li>Paciente</li>
-    </a>
-    <a href="./subsistemas/pago.html">
-        <li>Pago</li>
-      </a>
-      <a href="./subsistemas/personal.html">
-        <li>Personal</li>
-      </a>
-      <a href="./subsistemas/proveedores.html">
-        <li>Proveedores</li>
-      </a>
-      <a href="./subsistemas/rehabilitacion.html">
-        <li>Rehabilitación</li>
-      </a>
-
-      <a href="./subsistemas/servicios.html">
-        <li>Servicios</li>
-      </a>
+    <li><a href="./subsistemas/citas.html">Citas</a></li>
+    <li><a href="./subsistemas/historial clinico.html">Historial Clínico</a></li>
+    <li><a href="./subsistemas/inventario.html">Inventario</a></li>
+    <li><a href="./subsistemas/paciente.html">Paciente</a></li>
+    <li><a href="./subsistemas/pago.html">Pago</a></li>
+    <li><a href="./subsistemas/personal.html">Personal</a></li>
+    <li><a href="./subsistemas/proveedores.html">Proveedores</a></li>
+    <li><a href="./subsistemas/rehabilitacion.html">Rehabilitación</a></li>
+    <li><a href="./subsistemas/servicios.html">Servicios</a></li>
   </ul>
 
-  <!-- Esta sección incluye diseño para las imagenes -->
-
-
-  <!-- • Miembros del proyecto. Aquí se agrega una lista de los integrantes del equipo de desarrollo del proyecto. Cada elemento de la lista contiene el nombre completo del integrante y su correo institucional. -->
   <h1>Miembros del proyecto</h1>
-  <!-- La sección Miembros del proyecto incluye imágenes de cada uno de los integrantes vestidos de manera formal -->
-
   <table>
     <tr>
         <td><img src="./imagenes/img_axel.jpeg" alt="Barrera Diaz José Axel" width="200" height="230"></td>
@@ -126,7 +126,7 @@
       <td>22011538@itsoeh.edu.mx</td>
       <td>22011469@itsoeh.edu.mx</td>
       <td>21011713@itsoeh.edu.mx</td>
-  </tr>
+    </tr>
   </table>
 </body>
 </html>
