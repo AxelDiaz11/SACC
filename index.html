@@ -15,7 +15,7 @@
         font-size: 22px; /* Títulos un poco más pequeños */
         margin-bottom: 10px;
         font-weight: bold; /* Negrita para resaltar títulos */
-        color: #0056b3; /* Color para títulos */
+        color: #000; /* Color negro para títulos */
     }
     p {
         text-align: justify; /* Alineación justificada para estilo formal */
@@ -37,32 +37,6 @@
     a:hover {
         text-decoration: underline;
     }
-    .image-container {
-        display: flex;
-        justify-content: center; /* Centrar contenido */
-        flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
-        gap: 20px; /* Espaciado entre imágenes */
-        padding: 20px;
-        background-color: #e8f5e9; /* Color verde claro */
-        border-radius: 10px; /* Bordes redondeados */
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
-        margin: 20px 0; /* Espacio arriba y abajo */
-    }
-    .image-item {
-        flex: 1 1 200px; /* Tamaño flexible para las imágenes */
-        max-width: 200px; /* Ancho máximo */
-        text-align: center; /* Centrar texto */
-    }
-    img {
-        width: 100%; /* Asegura que las imágenes sean responsivas */
-        height: auto; /* Mantiene la proporción */
-        border-radius: 10px; /* Bordes redondeados en imágenes */
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
-        transition: transform 0.3s; /* Transición suave para el efecto */
-    }
-    img:hover {
-        transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
-    }
     table {
         width: 100%;
         text-align: center;
@@ -71,6 +45,13 @@
     td {
         padding: 10px;
         font-size: 14px; /* Texto más pequeño en la tabla */
+    }
+    /* Estilo específico para las imágenes de los miembros del proyecto */
+    .member-img {
+        width: 120px; /* Ancho aumentado */
+        height: 120px; /* Altura aumentada */
+        border-radius: 50%; /* Bordes redondeados para hacer las imágenes ovaladas */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
     }
   </style>
 </head>
@@ -88,12 +69,7 @@
   <h1>Subsistemas del proyecto</h1>
   <p>En el desarrollo del sistema se utilizó la estrategia de "divide y vencerás", que busca identificar unidades de desarrollo lo suficientemente concisas para ser trabajadas de manera independiente, pero que también sean fáciles de integrar en el sistema completo.</p>
   
-  <div class="image-container">
-    <div class="image-item">
-      <img src="./imagenes/img_subsistemas.jpeg" alt="Descripción de los subsistemas">
-      <p>Descripción de los subsistemas</p>
-    </div>
-  </div>
+  <img src="./imagenes/img_subsistemas.jpeg" alt="Descripción de los subsistemas" width="800">
 
   <ul>
     <li><a href="./subsistemas/citas.html">Citas</a></li>
@@ -110,10 +86,10 @@
   <h1>Miembros del proyecto</h1>
   <table>
     <tr>
-        <td><img src="./imagenes/img_axel.jpeg" alt="Barrera Diaz José Axel" width="200" height="230"></td>
-        <td><img src="./imagenes/img_marco.jpeg" alt="Diaz Quijano Marco Antonio" width="230" height="230"></td>
-        <td><img src="./imagenes/img_viri.jpeg" alt="Lopez Cornejo Viridiana Josselyne" width="220" height="250"></td>
-        <td><img src="./imagenes/img_ivan.jpg" alt="Rodríguez Henández Iván Yazeth" width="200" height="230"></td>
+        <td><img class="member-img" src="./imagenes/img_axel.jpeg" alt="Barrera Diaz José Axel"></td>
+        <td><img class="member-img" src="./imagenes/img_marco.jpeg" alt="Diaz Quijano Marco Antonio"></td>
+        <td><img class="member-img" src="./imagenes/img_viri.jpeg" alt="Lopez Cornejo Viridiana Josselyne"></td>
+        <td><img class="member-img" src="./imagenes/img_ivan.jpg" alt="Rodríguez Henández Iván Yazeth"></td>
     </tr>
     <tr>
         <td>Barrera Diaz José Axel</td>
