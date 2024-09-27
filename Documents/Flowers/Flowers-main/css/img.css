@@ -1,0 +1,20 @@
+.random-images {
+    position: relative; /* Para contener las imágenes absolutas */
+  }
+  
+  .random-img {
+    position: absolute;
+    width: 100px; /* Tamaño de la imagen */
+    height: auto;
+    /* Valores aleatorios para top y left para dispersar las imágenes */
+    top: calc(10% + 80% * var(--random-y, 0));
+    left: calc(10% + 80% * var(--random-x, 0));
+    opacity: 0.8; /* Transparencia para efecto visual */
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  
+  .random-img:hover {
+    transform: scale(1.2); /* Zoom al pasar el cursor */
+    opacity: 1;
+  }
+  
