@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Diseño del titulo*/
+
+        h1 {
+      text-align: center;
+      background-color: #e0f7fa; /* Color de fondo suave */
+      color: #006064; /* Color de texto */
+      padding: 8px; /* Espaciado interno para que se vea mejor */
+      border-radius: 10px; /* Bordes redondeados */
+      font-family: 'Arial', sans-serif;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      margin-bottom: 20px;
+    }
+
+        body {
+            background-color: #f5f5f5; /* Fondo de la página suave */
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5; /* Fondo suave */
+            font-family: Arial, sans-serif;
+        }
+         
+        /* Diseño del boton Personal*/
+
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px; /* Espaciado interno */
+            margin: 10px; /* Margen alrededor del botón */
+            background-color: #009688; /* Color de fondo del botón */
+            color: white; /* Color del texto */
+            text-decoration: none; /* Sin subrayado */
+            border-radius: 5px; /* Bordes redondeados */
+            transition: background-color 0.3s; /* Transición suave */
+        }
+
+        .button-link:hover {
+            background-color: #00ff26; /* Color de fondo al pasar el mouse */
+        }
+
+        /* Diseño de la imagen*/
+
+        .centered-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 700px; /* Ancho fijo para la imagen */
+        }
+
+        /* Diseño del texto 1 */
+
+        body{
+            background-color: #f5f5f5; /* Fondo suave */
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #ffffff; /* Fondo blanco para la sección */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            padding: 20px; /* Espaciado interno */
+        }
+
+        h1 {
+            text-align: center;
+            color: #004d40; /* Color oscuro para el encabezado */
+            margin-bottom: 20px;
+            font-size: 2.5em; /* Tamaño de fuente más grande */
+        }
+
+        h3 {
+            color: #00796b; /* Color para subtítulos */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.75em; /* Tamaño de fuente para h3 */
+            border-bottom: 2px solid #e0e0e0; /* Línea inferior para separación */
+            padding-bottom: 5px; /* Espacio debajo del texto */
+        }
+
+        h4 {
+            color: #004d40; /* Color oscuro para subtítulos menores */
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-size: 1.25em; /* Tamaño de fuente para h4 */
+        }
+
+        p {
+            line-height: 1.6; /* Espaciado entre líneas */
+            margin-bottom: 15px;
+            color: #555555; /* Color de texto más suave */
+        }
+
+        ul {
+            list-style-type: disc; /* Estilo de lista */
+            margin-left: 20px; /* Margen izquierdo para la lista */
+        }
+
+        li {
+            margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+            color: #333333; /* Color de texto para los elementos de la lista */
+        }
+
+        /* Diseño para el texto 2*/
+
+        body {
+            background-color: #f5f5f5; /* Fondo suave */
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #ffffff; /* Fondo blanco para la sección */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            padding: 20px; /* Espaciado interno */
+        }
+
+        h1 {
+            text-align: center;
+            color: #004d40; /* Color oscuro para el encabezado */
+            margin-bottom: 20px;
+            font-size: 2.5em; /* Tamaño de fuente más grande */
+        }
+
+        h4 {
+            color: #004d40; /* Color oscuro para subtítulos menores */
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1.25em; /* Tamaño de fuente para h4 */
+            border-bottom: 2px solid #e0e0e0; /* Línea inferior para separación */
+            padding-bottom: 5px; /* Espacio debajo del texto */
+        }
+
+        ul {
+            list-style-type: disc; /* Estilo de lista */
+            margin-left: 20px; /* Margen izquierdo para la lista */
+        }
+
+        li {
+            margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+            color: #333333; /* Color de texto para los elementos de la lista */
+            line-height: 1.6; /* Espaciado entre líneas */
+        }
+
+        p {
+            line-height: 1.6; /* Espaciado entre líneas */
+            margin-bottom: 15px;
+            color: #555555; /* Color de texto más suave */
+        }
+
+        /* Diseño de las tablas SQL*/
+
+        body {
+            background-color: #f5f5f5; /* Fondo suave */
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #ffffff; /* Fondo blanco para la sección */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            padding: 20px; /* Espaciado interno */
+            max-width: 800px; /* Ancho máximo de la sección */
+            margin: auto; /* Centrar la sección */
+        }
+
+        h1 {
+            text-align: center;
+            color: #004d40; /* Color oscuro para el encabezado */
+            margin-bottom: 20px;
+            font-size: 2em; /* Tamaño de fuente más grande */
+        }
+
+        h4 {
+            color: #004d40; /* Color oscuro para subtítulos menores */
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1.3em; /* Tamaño de fuente para h4 */
+            border-bottom: 2px solid #e0e0e0; /* Línea inferior para separación */
+            padding-bottom: 5px; /* Espacio debajo del texto */
+        }
+
+        pre {
+            background-color: #f0f0f0; /* Fondo suave para el código */
+            border-radius: 5px; /* Bordes redondeados para el bloque de código */
+            padding: 10px; /* Espaciado interno */
+            overflow-x: auto; /* Habilitar desplazamiento horizontal */
+            font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+            color: #333; /* Color del texto */
+            line-height: 1.3; /* Espaciado entre líneas */
+            white-space: pre-wrap; /* Mantener los saltos de línea */
+            font-size: 0.9em; /* Tamaño de fuente más pequeño */
+            max-height: 300px; /* Altura máxima del bloque de código */
+            overflow-y: auto; /* Habilitar desplazamiento vertical si es necesario */
+        }
+
+        /* Diseño de insertar registros*/
+
+        body {
+            background-color: #f5f5f5; /* Fondo suave */
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #ffffff; /* Fondo blanco para la sección */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            padding: 20px; /* Espaciado interno */
+            max-width: 800px; /* Ancho máximo de la sección */
+            margin: auto; /* Centrar la sección */
+        }
+
+        h1 {
+            text-align: center;
+            color: #004d40; /* Color oscuro para el encabezado */
+            margin-bottom: 20px;
+            font-size: 2em; /* Tamaño de fuente más grande */
+        }
+
+        h4 {
+            color: #004d40; /* Color oscuro para subtítulos menores */
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1.3em; /* Tamaño de fuente para h4 */
+            border-bottom: 2px solid #e0e0e0; /* Línea inferior para separación */
+            padding-bottom: 5px; /* Espacio debajo del texto */
+        }
+
+        pre {
+            background-color: #f0f0f0; /* Fondo suave para el código */
+            border-radius: 5px; /* Bordes redondeados para el bloque de código */
+            padding: 10px; /* Espaciado interno */
+            overflow-x: auto; /* Habilitar desplazamiento horizontal */
+            font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+            color: #333; /* Color del texto */
+            line-height: 1.3; /* Espaciado entre líneas */
+            white-space: pre-wrap; /* Mantener los saltos de línea */
+            font-size: 0.9em; /* Tamaño de fuente más pequeño */
+            max-height: 300px; /* Altura máxima del bloque de código */
+            overflow-y: auto; /* Habilitar desplazamiento vertical si es necesario */
+        }
+    </style>
+
+</head>
+<ul>
+    <a href="./../subsistemas/personal.html" class="button-link">Personal</a>
+</ul>
+
+<h1>Diseño de la base de datos del subsistema</h1>
+
+<img src="./../imagenes/Base de Datos.jpeg" alt="Base de Datos" class="centered-image">
+
+<body>
+
+<section>
+    <h1>Pertinencia de la arquitectura de la base de datos</h1>
+
+    <h3>Tabla Empleados</h3>
+    <p>Esta tabla es el núcleo del subsistema, ya que almacena toda la información básica sobre el personal de la clínica.</p>
+    <h4>Pertinencia de los campos:</h4>
+    <ul>
+        <li>Los campos como Nombre, Apellido, Correo, y Telefono son necesarios para identificar y contactar al empleado.</li>
+        <li>Estado (Activo o Inactivo) es importante para gestionar al personal que ha dejado de trabajar, manteniendo los datos históricos sin perder la trazabilidad de empleados que ya no están en servicio.</li>
+        <li>El campo FechaContratacion permite controlar la antigüedad del empleado, útil para reportes de desempeño o promociones.</li>
+    </ul>
+    <h4>Relación con otras tablas:</h4>
+    <ul>
+        <li>IdEmpleado sirve como clave primaria para relacionar esta tabla con todas las demás (Asistencia, Permisos, Horarios y Reportes), manteniendo consistencia y evitando duplicados.</li>
+    </ul>
+
+
+    <h3>Tabla Cargos</h3>
+    <h4>Pertinencia de la separación de Cargos</h4>
+    <ul>
+        <li>Permite una mejor organización y evita que se repita el mismo cargo en la tabla Empleados, lo que podría llevar a inconsistencias (por ejemplo, si se actualiza un cargo, no se tendrían que modificar múltiples registros).</li>
+        <li>Facilita la actualización de descripciones de cargos a futuro y permite asociar cargos a distintos empleados sin redundancias.</li>
+    </ul>
+
+
+    <h3>Tabla Asistencia</h3>
+    <p>La tabla de Asistencia es crucial para registrar las entradas y salidas del personal, así como su asistencia diaria.</p>
+    <h4>Pertinencia de los campos:</h4>
+    <ul>
+        <li>Fecha, HoraEntrada, y HoraSalida aseguran el registro diario de las jornadas laborales del personal.</li>
+        <li>El campo Asistio (booleano) permite un control rápido de ausencias.</li>
+        <li>La relación con Empleados mediante IdEmpleado garantiza que cada registro de asistencia esté vinculado a un empleado específico, evitando duplicidad o inconsistencias en los registros.</li>
+    </ul>
+
+
+    <h3>Tabla Permisos</h3>
+    <p>Los permisos o ausencias son un aspecto esencial en la gestión de personal.</p>
+    <h4>Pertinencia de los campos:</h4>
+    <ul>
+        <li>FechaSolicitud, FechaInicio, y FechaFin permiten llevar un registro detallado de los permisos solicitados y su duración.</li>
+        <li>El campo Estado (Aprobado, Pendiente, Rechazado) permite gestionar los permisos de manera eficaz, proporcionando una visión clara de la situación actual de cada solicitud.</li>
+    </ul>
+    <h4>Relación con Empleados</h4>
+    <ul>
+        <li>Cada permiso está vinculado a un empleado específico a través de IdEmpleado, manteniendo la consistencia y permitiendo generar reportes de permisos por empleado de manera sencilla.</li>
+    </ul>
+
+    
+    <h3>Tabla Horarios</h3>
+    <p>Es fundamental para controlar los turnos de trabajo del personal.</p>
+    <h4>Pertinencia de los campos:</h4>
+    <ul>
+        <li>DiaSemana, HoraInicio, y HoraFin permiten definir turnos personalizados para cada empleado, lo cual es esencial en entornos clínicos donde los empleados pueden tener diferentes horarios.</li>
+        <li>La relación con Empleados garantiza que los turnos se asignen a un empleado específico y que no haya solapamiento o conflictos en la asignación de horarios.</li>
+    </ul>
+
+
+    <h3>Tabla Reportes</h3>
+    <p>Esta tabla almacena los reportes de desempeño del personal.</p>
+    <h4>Pertinencia de los campos:</h4>
+    <ul>
+        <li>FechaGeneracion y Desempeno permiten llevar un control histórico de las evaluaciones de los empleados.</li>
+        <li>Las Observaciones permiten incluir detalles adicionales, como comentarios sobre el desempeño o áreas de mejora.</li>
+    </ul>
+    <h4>Relación con Empleados:</h4>
+    <ul>
+        <li>Cada reporte está vinculado a un empleado específico, lo que asegura que los registros de desempeño sean individuales y fácilmente trazables a cada miembro del personal.</li>
+    </ul>
+
+</section>
+
+<section>
+    <h1>Funcionalidades de los usuarios del subsistema</h1>
+
+    <h4>Funcionalidades del Administrador</h4>
+    <ul>
+        <li>Consultar la información del personal: Podrá acceder a la información de la tabla Empleados para consultar datos básicos</li>
+        <li>Registrar y monitorear la asistencia de los empleados: Para registrar y monitorear la asistencia, el Administrador podrá consultar y agregar datos en la tabla Asistencia.</li>
+        <li>Gestionar solicitudes de permisos o ausencias: Podrá revisar las solicitudes de permisos o ausencias desde la tabla Permisos. Cada solicitud tendrá un estado (Pendiente, Aprobado o Rechazado). </li>
+        <li>Generar reportes sobre la disponibilidad del personal y la carga de trabajo asignada: Los reportes sobre la disponibilidad se generan utilizando la tabla Horarios. Al combinar los datos de Horarios y Asistencia, se puede calcular la carga de trabajo de cada empleado, mostrando los días que asistieron o las horas trabajadas.</li>
+        <li>Agregar o eliminar personal: Para agregar personal, el Administrador podrá realizar inserciones en la tabla Empleados, y si un empleado deja de trabajar, podrá cambiar el estado del empleado a "Inactivo", manteniendo los registros históricos para futuras referencias.</li>
+        <li>Asignar horarios de trabajo para el personal: El Administrador podrá gestionar los turnos de trabajo mediante la tabla Horarios. Puede asignar nuevos turnos o ajustar los horarios de acuerdo con las necesidades del personal.</li>
+    </ul>
+
+    <h4>Funcionalidades del Recepcionista</h4>
+    <ul>
+        <li>Registrar la información de los pacientes cuando haya una consulta: El Recepcionista necesitará acceso a la información de disponibilidad de los terapeutas (empleados) para programar citas, lo cual se puede lograr con consultas a la tabla Horarios.</li>
+        <li>Actualizar información de contacto o datos relevantes de pacientes: Esta acción es del subsistema de Pacientes, pero estará relacionada indirectamente con el personal para garantizar que las citas se asignen correctamente según la disponibilidad de los terapeutas.</li>
+        <li>Procesar pagos o facturas relacionadas con los servicios prestados: El recepcionista puede necesitar verificar la disponibilidad de empleados para asociar el pago al personal que realizó la atención, accediendo a la tabla Empleados y Horarios.</li>
+        <li>Programar citas a los terapeutas según su disponibilidad: El Recepcionista usará la información en la tabla Horarios para verificar los turnos de los terapeutas antes de asignar una cita. Esto es clave para evitar conflictos de horarios.</li>
+        <li>Atender llamadas para agendar citas: El Recepcionista puede verificar la disponibilidad de los empleados (terapeutas) consultando la tabla Horarios y registrando la cita en el subsistema de Citas.</li>
+        <li>Proporcionar información sobre el personal y horarios disponibles a los pacientes: Similar a la funcionalidad de programar citas, el Recepcionista puede acceder a la tabla Horarios para proporcionar información actualizada sobre los turnos y la disponibilidad del personal.</li>
+    </ul>
+</section>
+
+<section>
+    <h1>Cumplimiento de 1NF, 2NF y 3NF</h1>
+
+    <ul>
+        <li>Los datos están completamente atomizados, eliminando cualquier duplicidad.</li>
+        <li>No hay dependencias parciales o transitivas, lo que asegura una estructura sólida que no se romperá al escalar o modificar el sistema.</li>
+        <li>Se garantiza la eficiencia al realizar consultas complejas, como obtener reportes de desempeño por empleado o filtrar permisos por estado.</li>
+    </ul>
+</section>
+
+<section>
+    <h1>Codigo de la base de datos</h1>
+
+           
+    <h4>Tabla Empleados</h4>
+    <pre> 
+        CREATE TABLE Empleados (<br>
+        IdEmpleado INT PRIMARY KEY IDENTITY(1,1),<br>
+        Nombre NVARCHAR(100) NOT NULL,<br>
+        Apellido NVARCHAR(100) NOT NULL,<br>
+        Correo NVARCHAR(100) NOT NULL UNIQUE,<br>
+        Telefono NVARCHAR(20),<br>
+        Direccion NVARCHAR(200),<br>
+        FechaContratacion DATE NOT NULL,<br>
+        Estado NVARCHAR(20) -- Activo, Inactivo, <br>
+        ) <br>
+    </pre>
+
+    
+    <h4>Tabla Cargos</h4>    
+    <pre>
+        CREATE TABLE Cargos ( <br>
+        IdCargo INT PRIMARY KEY IDENTITY(1,1), <br>
+        Descripcion NVARCHAR(50) NOT NULL <br>
+        );<br>
+    </pre>
+
+    
+    <h4>Relación de Empleados con Cargos</h4>
+    <pre>
+    ALTER TABLE Empleados<br>
+    ADD IdCargo INT FOREIGN KEY REFERENCES Cargos(IdCargo);<br>
+    </pre>
+
+    
+    <h4>Tabla Asistencia</h4>
+    <pre>
+    CREATE TABLE Asistencia ( <br>
+        IdAsistencia INT PRIMARY KEY IDENTITY(1,1), <br>
+        IdEmpleado INT FOREIGN KEY REFERENCES Empleados(IdEmpleado), <br>
+        Fecha DATE NOT NULL, <br>
+        HoraEntrada TIME, <br>
+        HoraSalida TIME,
+        Asistio BIT NOT NULL <br>
+    ); <br>
+    </pre>
+
+    
+    <h4>Tabla Permisos</h4>
+    <pre>
+    CREATE TABLE Permisos (<br>
+    IdPermiso INT PRIMARY KEY IDENTITY(1,1),<br>
+    IdEmpleado INT FOREIGN KEY REFERENCES Empleados(IdEmpleado),<br>
+    FechaSolicitud DATE NOT NULL,<br>
+    FechaInicio DATE,<br>
+    FechaFin DATE,<br>
+    Motivo NVARCHAR(200),<br>
+    Estado NVARCHAR(20) <br>
+    ); <br>
+    </pre>
+
+    
+    <h4>Tabla Horarios</h4>
+    <pre>
+    CREATE TABLE Horarios ( <br>
+    IdHorario INT PRIMARY KEY IDENTITY(1,1), <br>
+    IdEmpleado INT FOREIGN KEY REFERENCES Empleados(IdEmpleado), <br>
+    DiaSemana NVARCHAR(10),<br>
+    HoraInicio TIME NOT NULL, <br>
+    HoraFin TIME NOT NULL <br>
+    ); <br>
+    </pre>
+
+    
+    <h4>Tabla Reportes</h4>
+    <pre>
+    CREATE TABLE Reportes ( <br>
+    IdReporte INT PRIMARY KEY IDENTITY(1,1), <br>
+    IdEmpleado INT FOREIGN KEY REFERENCES Empleados(IdEmpleado), <br>
+    FechaGeneracion DATE NOT NULL, <br>
+    Desempeno NVARCHAR(200), <br>
+    Observaciones NVARCHAR(300) <br>
+    ); <br>
+    </pre>
+</section>
+
+<section>
+    <h1>Código SQL para agregar registros</h1>
+
+    <h4>Insertar cargos en la tabla Cargos</h4>
+<pre>    
+    INSERT INTO Cargos (NombreCargo, Descripcion) <br>
+    VALUES <br>
+    ('Administrador', 'Encargado de la gestión administrativa del personal'), <br>
+    ('Recepcionista', 'Encargado de la atención a los pacientes y manejo de citas'), <br>
+    ('Terapeuta', 'Encargado de brindar servicios de rehabilitación'), <br>
+    ('Médico', 'Encargado de brindar atención médica a los pacientes'); <br>
+</pre>
+</section>
+
+<section>
+    <h4>Insertar empleados en la tabla Empleados</h4>
+<pre>
+    INSERT INTO Empleados (Nombre, Apellido, Correo, Telefono, Direccion, FechaContratacion, Estado, IdCargo) <br>
+    VALUES <br>
+    ('Juan', 'Pérez', 'juan.perez@mail.com', '555-1234', 'Calle Principal 123', '2022-06-15', 'Activo', 1), <br>
+    ('María', 'García', 'maria.garcia@mail.com', '555-5678', 'Avenida Central 45', '2021-09-01', 'Activo', 2), <br>
+    ('Carlos', 'López', 'carlos.lopez@mail.com', '555-9876', 'Calle Nueva 789', '2023-03-10', 'Activo', 3), <br>
+    ('Ana', 'Martínez', 'ana.martinez@mail.com', '555-3456', 'Pasaje Del Sol 56', '2020-11-20', 'Inactivo', 4); <br>
+</pre>
+</section>
+
+
+
+<section>
+    <h4>Insertar registros de asistencia en la tabla Asistencia</h4>
+<pre>
+    INSERT INTO Asistencia (IdEmpleado, Fecha, HoraEntrada, HoraSalida, Asistio) <br>
+    VALUES <br>
+    (1, '2024-10-14', '08:00', '16:00', 1), <br>
+    (2, '2024-10-14', '09:00', '17:00', 1), <br>
+    (3, '2024-10-14', '10:00', '18:00', 1), <br>
+    (1, '2024-10-15', '08:05', '16:10', 1), <br>
+    (2, '2024-10-15', '09:00', '17:00', 0); <br>
+</pre>
+</section>
+
+
+
+<section>
+    <h4>Insertar permisos en la tabla Permisos</h4>
+<pre>
+    INSERT INTO Permisos (IdEmpleado, FechaSolicitud, FechaInicio, FechaFin, Motivo, Estado) <br>
+    VALUES <br>
+    (1, '2024-10-10', '2024-10-20', '2024-10-22', 'Vacaciones', 'Aprobado'), <br>
+    (2, '2024-10-12', '2024-10-25', '2024-10-26', 'Asunto personal', 'Pendiente'), <br>
+    (3, '2024-09-30', '2024-10-15', '2024-10-16', 'Enfermedad', 'Rechazado'); <br>
+</pre>
+</section>
+
+
+
+<section>
+    <h4>Insertar horarios en la tabla Horarios</h4>
+<pre>
+    INSERT INTO Horarios (IdEmpleado, DiaSemana, HoraInicio, HoraFin) <br>
+    VALUES <br>
+    (1, 'Lunes', '08:00', '16:00'), <br>
+    (1, 'Martes', '08:00', '16:00'), <br>
+    (2, 'Lunes', '09:00', '17:00'), <br>
+    (2, 'Martes', '09:00', '17:00'), <br>
+    (3, 'Lunes', '10:00', '18:00'), <br>
+    (3, 'Miércoles', '10:00', '18:00'); <br>
+</pre>
+</section>
+
+
+
+<section>
+    <h4>Insertar reportes de desempeño en la tabla Reportes</h4>
+<pre>
+    INSERT INTO Reportes (IdEmpleado, FechaGeneracion, Desempeno, Observaciones) <br>
+    VALUES <br>
+    (1, '2024-09-30', 'Excelente', 'Juan ha mostrado gran liderazgo y responsabilidad.'), <br>
+    (2, '2024-09-30', 'Bueno', 'María es muy eficiente en la atención de pacientes, pero puede mejorar en la gestión de citas.'), <br>
+    (3, '2024-09-30', 'Satisfactorio', 'Carlos ha mejorado en su puntualidad y tiene buen trato con los pacientes.'), <br>
+    (1, '2024-08-30', 'Bueno', 'Juan necesita mejorar en la distribución de tareas.'); <br>
+</pre>
+</section>
+
+
+</body>
+
+</html>
+
