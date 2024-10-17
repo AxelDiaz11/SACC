@@ -1,77 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sistema de Administración y Control de Citas "SACC"</title>
   <style>
-    body {
-        font-family: "Georgia", serif; /* Fuente más formal */
-        margin: 20px;
-        line-height: 1.6; /* Mejor legibilidad */
-        background-color: #f4f7f9; /* Color de fondo suave */
-    }
+    /* Diseño del titulo */
     h1 {
-        font-size: 22px; /* Títulos un poco más pequeños */
-        margin-bottom: 10px;
-        font-weight: bold; /* Negrita para resaltar títulos */
-        color: #000; /* Color negro para títulos */
+      text-align: center;
+      background-color: #e0f7fa; /* Color de fondo suave */
+      color: #006064; /* Color de texto */
+      padding: 8px; /* Espaciado interno para que se vea mejor */
+      border-radius: 10px; /* Bordes redondeados */
+      font-family: 'Arial', sans-serif;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      margin-bottom: 20px;
     }
+
+    body {
+      background-color: #f5f5f5; /* Fondo de la página suave */
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    section {
+      background-color: #ffffff; /* Fondo blanco para la sección */
+      border-radius: 8px; /* Bordes redondeados */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      padding: 20px; /* Espaciado interno */
+      max-width: 800px; /* Ancho máximo de la sección */
+      margin: auto; /* Centrar la sección */
+    }
+
     p {
-        text-align: justify; /* Alineación justificada para estilo formal */
-        margin-bottom: 20px;
-        font-size: 14px; /* Texto más pequeño */
+      color: #333; /* Color del texto */
+      line-height: 1.5; /* Espaciado entre líneas */
     }
-    ul {
-        list-style-type: disc; /* Estilo de viñeta formal */
-        padding-left: 40px;
-        font-size: 14px; /* Texto más pequeño */
+
+    /* Diseño de los botones */
+    .button-list {
+      list-style: none; /* Eliminar puntos de la lista */
+      padding: 0; /* Eliminar padding por defecto */
+      display: flex; /* Mostrar en fila */
+      flex-direction: column; /* Cambiar a columna si prefieres */
+      gap: 10px; /* Espaciado entre los botones */
+      text-align: center; /* Centrar los botones */
     }
-    li {
-        margin-bottom: 5px;
+
+    .button-list a {
+      display: inline-block; /* Asegurarse de que el enlace sea un bloque */
+      padding: 10px 20px; /* Espaciado interno */
+      background-color: #009688; /* Color de fondo */
+      color: white; /* Color del texto */
+      text-decoration: none; /* Eliminar subrayado */
+      border-radius: 5px; /* Bordes redondeados */
+      transition: background-color 0.3s; /* Transición suave */
     }
-    a {
-        text-decoration: none;
-        color: #0056b3; /* Color más formal para enlaces */
+
+    .button-list a:hover {
+      background-color: #00ff26; /* Color de fondo al pasar el mouse */
     }
-    a:hover {
-        text-decoration: underline;
-    }
+
+    /* Estilo de la tabla */
     table {
-        width: 100%;
-        text-align: center;
-        margin-top: 20px;
+      width: 100%; /* Ancho completo de la tabla */
+      border-collapse: collapse; /* Colapsar bordes */
+      margin-top: 20px; /* Espaciado superior */
     }
+
     td {
-        padding: 10px;
-        font-size: 14px; /* Texto más pequeño en la tabla */
+      text-align: center; /* Centrar contenido de las celdas */
+      padding: 10px; /* Espacio interno de las celdas */
     }
-    /* Estilo específico para las imágenes de los miembros del proyecto */
+
     .member-img {
-        width: 120px; /* Ancho aumentado */
-        height: 120px; /* Altura aumentada */
-        border-radius: 50%; /* Bordes redondeados para hacer las imágenes ovaladas */
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
+      width: 150px; /* Ancho fijo para las imágenes */
+      height: 150px; /* Altura fija para las imágenes */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para un efecto de profundidad */
+      object-fit: cover; /* Mantiene la proporción y cubre el área del contenedor */
     }
   </style>
 </head>
 <body>
-  
   <h1>Sistema de Administración y Control de Citas (SACC)</h1>
-  <p>SACC es un sistema propuesto para clínicas, pensado para gestionar de manera eficiente el funcionamiento interno de las clínicas: inventario, citas, pago, historial clínico, proveedores, paciente, rehabilitación, personal y servicios.</p>
+  <section>
+    <p>SACC es un sistema propuesto para clínicas, pensado para gestionar de manera eficiente el funcionamiento interno de las clínicas: inventario, citas, pago, historial clínico, proveedores, paciente, rehabilitación, personal y servicios.</p>
+  </section>
 
-  <h1>Problemática del proyecto</h1>
-  <p>La problemática a resolver es la falta de un sistema integrado para la gestión y control de procesos internos en clínicas, lo que genera problemas en el registro de citas, inventario, pagos, historiales clínicos y atención al paciente. Esta situación dificulta el seguimiento adecuado en clínicas.</p>
+  <section>
+    <h1>Problemática del proyecto</h1>
+    <p>La problemática a resolver es la falta de un sistema integrado para la gestión y control de procesos internos en clínicas, lo que genera problemas en el registro de citas, inventario, pagos, historiales clínicos y atención al paciente. Esta situación dificulta el seguimiento adecuado en clínicas.</p>
+  </section>
 
-  <h1>Objetivo del proyecto</h1>
-  <p>Sistematizar los procesos de gestión y control de citas, inventarios, pagos, historiales clínicos y atención médica mediante el desarrollo de un sistema digital integrado, con el fin de optimizar el seguimiento de dichos aspectos.</p>
+  <section>
+    <h1>Objetivo del proyecto</h1>
+    <p>Sistematizar los procesos de gestión y control de citas, inventarios, pagos, historiales clínicos y atención médica mediante el desarrollo de un sistema digital integrado, con el fin de optimizar el seguimiento de dichos aspectos.</p>
+  </section>
 
-  <h1>Subsistemas del proyecto</h1>
-  <p>En el desarrollo del sistema se utilizó la estrategia de "divide y vencerás", que busca identificar unidades de desarrollo lo suficientemente concisas para ser trabajadas de manera independiente, pero que también sean fáciles de integrar en el sistema completo.</p>
-  
-  <img src="./imagenes/img_subsistemas.jpeg" alt="Descripción de los subsistemas" width="800">
+  <section>
+    <h1>Subsistemas del proyecto</h1>
+    <p>En el desarrollo del sistema se utilizó la estrategia de "divide y vencerás", que busca identificar unidades de desarrollo lo suficientemente concisas para ser trabajadas de manera independiente, pero que también sean fáciles de integrar en el sistema completo.</p>
+  </section>
 
-  <ul>
+  <section style="text-align: center;">
+    <img src="./imagenes/img_subsistemas.jpeg" alt="Descripción de los subsistemas" width="800">
+  </section>
+
+  <ul class="button-list">
     <li><a href="./subsistemas/citas.html">Citas</a></li>
     <li><a href="./subsistemas/historial clinico.html">Historial Clínico</a></li>
     <li><a href="./subsistemas/inventario.html">Inventario</a></li>
@@ -83,26 +120,28 @@
     <li><a href="./subsistemas/servicios.html">Servicios</a></li>
   </ul>
 
-  <h1>Miembros del proyecto</h1>
-  <table>
-    <tr>
+  <section>
+    <h1>Miembros del proyecto</h1>
+    <table>
+      <tr>
         <td><img class="member-img" src="./imagenes/img_axel.jpeg" alt="Barrera Diaz José Axel"></td>
         <td><img class="member-img" src="./imagenes/img_marco.jpeg" alt="Diaz Quijano Marco Antonio"></td>
         <td><img class="member-img" src="./imagenes/img_viri.jpeg" alt="Lopez Cornejo Viridiana Josselyne"></td>
         <td><img class="member-img" src="./imagenes/img_ivan.jpg" alt="Rodríguez Henández Iván Yazeth"></td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>Barrera Diaz José Axel</td>
         <td>Diaz Quijano Marco Antonio</td>
         <td>Lopez Cornejo Viridiana Josselyne</td>
         <td>Rodríguez Henández Iván Yazeth</td>
-    </tr>
-    <tr>
-      <td>22011550@itsoeh.edu.mx</td>
-      <td>22011538@itsoeh.edu.mx</td>
-      <td>22011469@itsoeh.edu.mx</td>
-      <td>21011713@itsoeh.edu.mx</td>
-    </tr>
-  </table>
+      </tr>
+      <tr>
+        <td>22011550@itsoeh.edu.mx</td>
+        <td>22011538@itsoeh.edu.mx</td>
+        <td>22011469@itsoeh.edu.mx</td>
+        <td>21011713@itsoeh.edu.mx</td>
+      </tr>
+    </table>
+  </section>
 </body>
 </html>
