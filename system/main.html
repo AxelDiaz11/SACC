@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Nuevo Empleado</title>
+    <style>
+        body {
+            background-color: #f4f9f4;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #2e8b57;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: #45a049;
+        }
+
+        /* Alinear el botón a la izquierda */
+        .form-group button {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <a href="./../subsistemas/personal.html">subsistema personal</a>
+      </section>
+    <h2>Crear Nuevo Empleado</h2>
+    <form action="Crear_Empleado" method="post">
+        <div class="form-group">
+            <label for="Nombre">Nombre:</label>
+            <input type="text" class="form-control" id="Nombre" name="Nombre" required />
+        </div>
+
+        <div class="form-group">
+            <label for="Apellido">Apellido:</label>
+            <input type="text" class="form-control" id="Apellido" name="Apellido" required />
+        </div>
+
+        <div class="form-group">
+            <label for="Correo">Correo:</label>
+            <input type="email" class="form-control" id="Correo" name="Correo" required />
+        </div>
+
+        <div class="form-group">
+            <label for="Telefono">Teléfono:</label>
+            <input type="text" class="form-control" id="Telefono" name="Telefono" required />
+        </div>
+
+        <div class="form-group">
+            <label for="Direccion">Dirección:</label>
+            <input type="text" class="form-control" id="Direccion" name="Direccion" required />
+        </div>
+
+        <div class="form-group">
+            <label for="FechaContratacion">Fecha de Contratación:</label>
+            <input type="date" class="form-control" id="FechaContratacion" name="FechaContratacion" min="" required />
+        </div>
+
+        <div class="form-group">
+            <label for="Estado">Estado:</label>
+            <select class="form-control" id="Estado" name="Estado" required>
+                <option value="Activo">Activo</option>
+                <option value="Inactivo">Inactivo</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Crear Empleado</button>
+    </form>
+
+    <script>
+        // Establecer la fecha mínima para el campo de fecha de contratación
+        document.getElementById('FechaContratacion').min = new Date().toISOString().split("T")[0];
+    </script>
+</body>
+</html>
