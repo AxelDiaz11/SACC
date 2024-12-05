@@ -364,11 +364,41 @@
     <h1>Cumplimiento de 1NF, 2NF y 3NF</h1>
 
     <ul>
-        <li>Los datos están completamente atomizados, eliminando cualquier duplicidad.</li>
-        <li>No hay dependencias parciales o transitivas, lo que asegura una estructura sólida que no se romperá al escalar o modificar el sistema.</li>
-        <li>Se garantiza la eficiencia al realizar consultas complejas, como obtener reportes de desempeño por empleado o filtrar permisos por estado.</li>
+        <li>
+            <h4>Pertinencia de la Primera Forma Normal (1FN)</h4>
+            <p>La Primera Forma Normal exige que todos los atributos de una tabla sean atómicos (es decir, no divisibles) y que no existan grupos repetitivos.</p>
+            <p><strong>Justificación:</strong> Todas las tablas están en 1FN, ya que los datos están almacenados en campos atómicos. Por ejemplo:</p>
+            <ul>
+                <li>La tabla Empleados tiene columnas como Nombre, Apellido y Correo, que no contienen listas ni valores múltiples.</li>
+                <li>La tabla Horarios almacena un día por fila, asegurando que los registros no sean multivaluados.</li>
+            </ul>
+            <p><strong>Pertinencia:</strong> La 1FN es pertinente porque evita redundancias dentro de los campos, permitiendo una estructura clara y ordenada. Esto facilita consultas precisas y la actualización de datos sin errores, crucial en el manejo de información del personal.</p>
+        </li>
+
+        <li>
+            <h4>Pertinencia de la Segunda Forma Normal (2FN)</h4>
+            <p>La Segunda Forma Normal requiere que las tablas estén en 1FN y que todos los atributos no clave dependan completamente de la clave primaria, evitando dependencias parciales.</p>
+            <p><strong>Justificación:</strong> Todas las tablas cumplen con 2FN porque los campos dependen totalmente de la clave primaria. Por ejemplo:</p>
+            <ul>
+                <li>En la tabla Asistencia, los campos Fecha, HoraEntrada y HoraSalida dependen completamente de IdAsistencia.</li>
+                <li>En Permisos, los campos como FechaSolicitud y Estado dependen exclusivamente de IdPermiso.</li>
+            </ul>
+            <p><strong>Pertinencia:</strong> Cumplir con la 2FN es relevante porque garantiza que no existan datos duplicados ni dependencias parciales, optimizando el almacenamiento. Esto es fundamental para el subsistema, ya que permite manejar información precisa sobre asistencia y permisos sin redundancias innecesarias.</p>
+        </li>
+
+        <li>
+            <h4>Pertinencia de la Tercera Forma Normal (3FN)</h4>
+            <p>La Tercera Forma Normal exige que la tabla esté en 2FN y que no existan dependencias transitivas, es decir, los campos no clave deben depender únicamente de la clave primaria.</p>
+            <p><strong>Justificación:</strong> Las tablas cumplen con 3FN porque no tienen dependencias transitivas. Por ejemplo:</p>
+            <ul>
+                <li>En la tabla Empleados, todos los campos (Nombre, Apellido, Correo, etc.) dependen directamente de IdEmpleado.</li>
+                <li>En la tabla Reportes, Desempeño y Observaciones dependen directamente de IdReporte.</li>
+            </ul>
+            <p><strong>Pertinencia:</strong> La pertinencia de la 3FN radica en la eliminación de dependencias transitivas, lo que mejora la integridad y consistencia de los datos. Esto es esencial en el subsistema, ya que asegura que cada reporte, permiso o asistencia esté relacionado de manera única con un empleado específico, facilitando el análisis y generación de informes confiables.</p>
+        </li>
     </ul>
 </section>
+
 
 <section>
     <h1>Codigo de la base de datos</h1>
